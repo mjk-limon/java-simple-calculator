@@ -2,6 +2,7 @@ package com.calculator;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.DecimalFormat;
 
 public class MainButtons implements ActionListener {
     private final Calculator Calc;
@@ -20,6 +21,7 @@ public class MainButtons implements ActionListener {
             Calc.screen.setText("");
         } else if (e.getSource() == Calc.eqButton) {
             double result;
+            DecimalFormat numFormat = new DecimalFormat("0.#");
             Calc.num2 = Double.valueOf(Calc.screen.getText());
 
             System.out.println(Calc.num1);
@@ -42,7 +44,7 @@ public class MainButtons implements ActionListener {
                     result = Calc.num2;
             }
 
-            Calc.screen.setText(String.valueOf(result));
+            Calc.screen.setText(numFormat.format(result));
         }
     }
 }
