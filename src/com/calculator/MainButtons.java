@@ -24,9 +24,6 @@ public class MainButtons implements ActionListener {
             DecimalFormat numFormat = new DecimalFormat("0.#");
             Calc.num2 = Double.valueOf(Calc.screen.getText());
 
-            System.out.println(Calc.num1);
-            System.out.println(Calc.num2);
-
             switch (Calc.opt) {
                 case "+":
                     result = Calc.num1 + Calc.num2;
