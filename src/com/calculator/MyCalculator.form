@@ -26,6 +26,7 @@
           </grid>
         </constraints>
         <properties>
+          <columns value="0"/>
           <editable value="false"/>
           <enabled value="true"/>
           <text value=""/>
