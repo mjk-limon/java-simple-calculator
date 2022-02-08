@@ -20,7 +20,7 @@ public class MainButtons implements ActionListener {
             Calc.screen.setText("");
         } else if (e.getSource() == Calc.eqButton) {
             double result;
-            Calc.num2 = Integer.valueOf(Calc.screen.getText());
+            Calc.num2 = Double.valueOf(Calc.screen.getText());
 
             System.out.println(Calc.num1);
             System.out.println(Calc.num2);
@@ -39,7 +39,7 @@ public class MainButtons implements ActionListener {
                     result = Calc.num1 / Calc.num2;
                     break;
                 default:
-                    result = 0;
+                    result = Calc.num2;
             }
 
             Calc.screen.setText(String.valueOf(result));

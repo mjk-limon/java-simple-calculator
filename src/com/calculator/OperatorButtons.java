@@ -15,7 +15,7 @@ public class OperatorButtons implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         JButton button = (JButton) e.getSource();
         Calc.opt = button.getText();
-        Calc.num1 = Integer.parseInt(Calc.screen.getText());
+        Calc.num1 = Double.valueOf(Calc.screen.getText());
         Calc.screen.setText("");
     }
 }

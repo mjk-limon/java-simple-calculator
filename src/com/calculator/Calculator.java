@@ -4,7 +4,7 @@ import javax.swing.*;
 
 class Calculator extends MyCalculator {
     protected String opt;
-    protected int num1, num2;
+    protected double num1, num2;
 
     public final JButton[] MainButtons = {buttonC,buttonAC,eqButton};
     public final JButton[] OperatorButtons = {plusButton,minusButton,divButton,mulButton};
